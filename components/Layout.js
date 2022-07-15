@@ -11,7 +11,9 @@ const Layout = ({children, page}) => {
         </Head>
         <Header/>
         {children}
-        <Footer/>
+        <div className="footerr">
+          <Footer/>
+        </div>
     </div>
   )
 }

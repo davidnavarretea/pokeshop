@@ -4,7 +4,9 @@ export default function Home() {
     <Layout
       page='Inicio'
     >
-      <h1>PokeShop</h1>
+      <h1 className='heading'>
+        PokeShop
+      </h1>
     </Layout>
   )
 }
