@@ -1,0 +1,44 @@
+.header {
+    background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)) , url(../public/img/header.webp);
+    background-size:cover;
+    background-position:center;
+    padding: 5rem 0;
+}
+.logo {
+    cursor: pointer;
+}
+.bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width:768px) {
+    .bar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.nav {
+    margin-top: 3.2rem;
+    display: flex;
+    gap: 2rem;
+}
+@media (min-width:768px) {
+    .nav {
+        margin-top: 0;
+    }
+}
+.nav a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 3rem;
+    background-color: black;
+}
+.nav a:hover {
+    background-color: var(--rojo);
+    transition-duration: 300ms;
+}
