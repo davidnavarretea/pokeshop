@@ -1,6 +1,6 @@
 :root {
   --primary: #FFCC02;
-  --rojo: #AF0612;
+  --rojo: #9c755e3e;
   --negro: #1F120F;
   --blanco: #FFF;
   --fuente-principal: 'Outfit', sans-serif;
@@ -16,6 +16,10 @@ body {
   font-size: 2rem;
   font-family: var(--fuente-principal);
   line-height: 1.5;
+  background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)) , url(../public/img/bg.webp);
+    background-size:cover;
+    background-position:center;
+    background-repeat: round;
 }
 img {
   max-width: 100%;
@@ -32,4 +36,9 @@ img {
   font-weight: 900;
   color: var(--primary);
   margin: 5rem 0;
+}
+.footerr {
+  position:relative;
+  top: 36.1vh;
+  width: 100%;
 }

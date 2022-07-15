@@ -4,7 +4,12 @@ const Nosotros = () => {
     <Layout
         page='Nosotros'
     >
-        <h1>Desde Nosotros</h1>
+        <main className="contenedor">
+          <h2 className="heading">
+            Sobre PokeShop
+          </h2>
+
+        </main>
     </Layout>
   )
 }
