@@ -1,6 +1,7 @@
 .footer {
+    background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7));
     background-color: var(--negro);
-    padding: 2.7rem 0;
+    padding: 3rem 0;
     margin-top: 5rem;
 }
 .bar {
@@ -27,7 +28,7 @@
 .nav a {
     color: var(--primary);
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 1.5rem;
     text-transform: uppercase;
     padding: 1rem;
@@ -36,6 +37,14 @@
     color: var(--rojo);
     transition-duration: 300ms;
 }
-.bar p {
-    color: var(--primary);
+.dna {
+    color: #ffcc00e8;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+.dna:hover {
+    color: var(--rojo);
+    cursor: pointer;
+    transition-duration: 300ms;
 }
