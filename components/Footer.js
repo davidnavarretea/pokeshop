@@ -10,7 +10,9 @@ const Footer = () => {
                 <Link href='/blog'>Blog</Link>
                 <Link href='/tienda'>Tienda</Link>
             </nav>
-            <p>© Todos los derechos reservados</p>
+            <a className={styles.dna} href='https://davidnavarretea.com' target='blank'>
+              <p className={styles.dna}>DNA</p>
+            </a>
         </div>
     </footer>
   )

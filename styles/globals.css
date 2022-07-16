@@ -8,6 +8,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  height: 100%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -15,11 +16,12 @@ html {
 body {
   font-size: 2rem;
   font-family: var(--fuente-principal);
-  line-height: 1.5;
+  line-height: 1.4;
   background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)) , url(../public/img/bg.webp);
-    background-size:cover;
+    background-size:contain;
     background-position:center;
     background-repeat: round;
+  height: 100%;
 }
 img {
   max-width: 100%;
@@ -38,7 +40,7 @@ img {
   margin: 5rem 0;
 }
 .footerr {
-  position:relative;
-  top: 36.1vh;
+  position:absolute;
+  bottom: 0;
   width: 100%;
 }
