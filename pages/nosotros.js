@@ -19,9 +19,9 @@ const Nosotros = () => {
             </div>
             <div className={styles.texton}>
             <Image className={styles.img} layout="fixed" width={200} height={200} src='/img/pokemon4.webp' alt="nfts pokemon"/>;
-            <p className={styles.colortext}>Si eres freelancer este es tu marketplace de NFTs de Pokemon</p>
+            <p className={styles.colortext}>Top 9% de los diseñadores freelancers, este marketplace de NFTs de Pokemon es para ti</p>
             <Image className={styles.img} layout="fixed" width={200} height={200} src='/img/pokemon3.webp' alt="pokemon nfts"/>;
-            <p className={styles.colortext}>Si eres coleccionista, encontraste el lugar, donde solo se postean los mejores NFTs, de los mejores diseñadores de NFTs de Pokemon</p>
+            <p className={styles.colortext}>Si eres coleccionista, solo se postean los mejores NFTs, de los mejores diseñadores de NFTs de Pokemon</p>
             </div>
           </div>
         </main>
