@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=VT323&display=swap');
 :root {
   --primary: #FFCC02;
   --rojo: #9c755e3e;
@@ -15,13 +16,20 @@ html {
 }
 body {
   font-size: 2rem;
-  font-family: var(--fuente-principal);
+  font-family: 'Major Mono Display', monospace;
   line-height: 1.4;
   background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)) , url(../public/img/bg.webp);
-    background-size:contain;
+    background-size:cover;
     background-position:center;
     background-repeat: round;
-  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width:768px) {
+  body {
+    background-size:contain;
+  }
 }
 img {
   max-width: 100%;
@@ -39,8 +47,6 @@ img {
   color: var(--primary);
   margin: 5rem 0;
 }
-.footerr {
-  position:absolute;
-  bottom: 0;
-  width: 100%;
+.colortext {
+  color: white;
 }

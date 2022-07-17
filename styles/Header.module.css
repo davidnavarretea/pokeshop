@@ -2,7 +2,18 @@
     background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)) , url(../public/img/header.webp);
     background-size:cover;
     background-position:center;
-    padding: 2rem 0;
+    padding: 11rem 0;
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100px;
+    margin-bottom: 6rem;
 }
 .logo {
     cursor: pointer;

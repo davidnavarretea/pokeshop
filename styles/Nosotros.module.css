@@ -1,0 +1,33 @@
+.contenido {
+    display: grid;
+    gap: 4rem;
+}
+@media (min-width:768px) {
+    .contenido {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.texton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.colortext {
+    color: white;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 3rem;
+    margin-top: 0;
+}
+.colortext:hover {
+    color: rgba(255, 255, 255, 0.685);
+    cursor: crosshair;
+}
+.img{
+    transform: scale(0.75);
+}
+.img:hover {
+    cursor: crosshair;
+    transform: scale(1);
+    transition-duration: 1s;
+}
