@@ -17,6 +17,11 @@
 }
 .logo {
     cursor: pointer;
+    transform: scale(0.9);
+}
+.logo:hover {
+    transform: scale(1);
+    transition-duration: 1s;
 }
 .bar {
     display: flex;
