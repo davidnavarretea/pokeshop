@@ -3,7 +3,7 @@ import Footer from "./Footer"
 import Header from "./Header"
 const Layout = ({children, page}) => {
   return (
-    <div>
+    <>
         <Head>
             <title>PokeShop - {page}</title>
             <meta name="description" content="Pokemon Shop - Tienda Pokemon" />
@@ -11,10 +11,8 @@ const Layout = ({children, page}) => {
         </Head>
         <Header/>
         {children}
-        <div className="footerr">
           <Footer/>
-        </div>
-    </div>
+    </>
   )
 }
 
