@@ -22,6 +22,7 @@
     background-image: linear-gradient(to right,#ffcc02d5,#FFCC02, #ffcc02d5 50%,rgb(255, 255, 255) 50%);
     background-size: 200% 100%;
     background-position: -100%;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
