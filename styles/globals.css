@@ -10,9 +10,12 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   height: 100%;
+  user-select:none;
+  cursor: crosshair;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  user-select:none;
 }
 body {
   font-size: 2rem;
