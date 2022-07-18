@@ -7,7 +7,7 @@ const Nosotros = () => {
         page='Nosotros'
     >
         <main className="contenedor">
-          <h2 className="heading">
+          <h2 className={styles.heading}>
             ¿Qué es PokeShop?
           </h2>
           <div className={styles.contenido}>
