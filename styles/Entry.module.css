@@ -15,7 +15,11 @@
 }
 .date {
     font-size: 1.6rem;
-    color: var(--primary);
+    color: var(--primary) !important;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 .archor {
     margin-top: 2rem;
@@ -29,13 +33,42 @@
     padding: 1rem 5rem;
 }
 .archor:hover {
-    background-color: var(--primary);
+    background-color: #ffcc029b;
     color: var(--blanco);
     transition: all 300ms;
 }
 .resume {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    /* Animation Color Letter */
+    background-image: linear-gradient(to right,#ffcc02d5,#FFCC02, #ffcc02d5 50%,rgb(255, 255, 255) 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.resume:hover {
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    color: #ffcc02a9;
+    background-position: 0;
+}
+.resume::before{
+    content: '';
+    background: #FFCC02;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+  }
+.heading {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
     overflow: hidden;
 }

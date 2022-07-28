@@ -8,7 +8,7 @@ const Entry = entry => {
     <article className={styles.article}>
         <Image layout='responsive' width={640} height={400} src={`http://localhost:1337${imagen.url}`} alt={`pokemon nft ${titulo}`}/>
         <div className={styles.content}>
-            <h3>{titulo}</h3>
+            <h3 className={styles.heading}>{titulo}</h3>
             <p className={styles.date}>{formatDate(published_at)}</p>
             <p className={styles.resume}>{resumen}</p>
             <Link href={`/blog/${id}`}>
