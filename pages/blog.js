@@ -1,14 +1,33 @@
 import Layout from "../components/Layout"
-const Blog = () => {
+import Entry from "../components/Entry"
+import styles from '../styles/Blog.module.css'
+const Blog = (entries) => {
+  const entriesArray = entries.entries
   return (
     <Layout
         page='Blog'
     >
-        <h2 className="heading">
-          Blog
-        </h2>
+      <main className="contenedor">
+        <div className={styles.blog}>
+          {entriesArray.map( entry => (
+            <Entry
+              key={entry.id}
+              entry={entry}
+            />
+          ))}
+        </div>
+      </main>
     </Layout>
   )
 }
-
+export async function getStaticProps() {
+  const url = 'http://localhost:1337/blogs'
+  const request = await fetch(url)
+  const entries = await request.json()
+  return {
+    props: {
+      entries
+    }
+  }
+}
 export default Blog
