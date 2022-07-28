@@ -7,7 +7,9 @@ const Header = () => {
         <div className={`contenedor ${styles.bar}`}>
             {/* Logo */}
             <Link href='/'>
-                <Image className={styles.logo} src='/img/l.webp' width={200} height={200} alt='pokeshop'/>
+              <a>
+               <Image className={styles.logo} src='/img/l.webp' width={200} height={200} alt='pokeshop'/>
+              </a>
             </Link>
             {/* Nav */}
             <nav className={styles.nav}>
