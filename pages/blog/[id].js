@@ -9,7 +9,7 @@ const BlogEntry = (entry) => {
   )
 }
 export async function getStaticPaths() {
-    const url = 'http://localhost:1337/blogs'
+    const url = `${process.env.API_URL}/blogs`
     const request = await fetch(url)
     const entries = await request.json()
     const paths = entries.map(entry => ({
@@ -21,7 +21,7 @@ export async function getStaticPaths() {
     }
 }
 export async function getStaticProps({params: { id }}) {
-    const url = `http://localhost:1337/blogs/${id}`
+    const url = `${process.env.API_URL}/blogs/${id}`
     const request = await fetch(url)
     const entry = await request.json()
     return {

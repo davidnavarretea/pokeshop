@@ -45,9 +45,14 @@
         margin-top: 0;
     }
 }
+@media (max-width:428px) {
+    .linkus {
+        display: none;
+    }
+}
 @media (max-width:767px) {
     .nav {
-        display: none;
+        margin-top: 0;
     }
 }
 .nav a {
@@ -63,4 +68,7 @@
 .nav a:hover {
     background-color: var(--rojo);
     transition-duration: 300ms;
+}
+.linkus {
+    margin-top: 0.4rem;
 }
