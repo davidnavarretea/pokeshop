@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router'
 const BlogEntry = (entry) => {
     const entr = entry.entry
-    console.log(entr)
     const router = useRouter()
+    console.log(entr)
   return (
     <div>
     </div>
