@@ -24,7 +24,7 @@ body {
   background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)) , url(../public/img/bg.webp);
     background-size:cover;
     background-position:center;
-    background-repeat: round;
+    background-repeat: none;
   min-height: 100%;
   display: flex;
   flex-direction: column;

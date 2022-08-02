@@ -1,0 +1,19 @@
+.error {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.error a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 3rem;
+    margin: 0;
+}
+.error a:hover {
+    color: #ffcc02a5;
+}
+.heading {
+    color: #ffcc02a5;
+}

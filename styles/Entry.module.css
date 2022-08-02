@@ -72,3 +72,11 @@
     -webkit-line-clamp: 1;
     overflow: hidden;
 }
+/*  */
+.article {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.text {
+    white-space: pre-wrap;
+}
