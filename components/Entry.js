@@ -3,7 +3,7 @@ import Link from 'next/link'
 import {formatDate} from '../helpers/index'
 import styles from '../styles/Entry.module.css'
 const Entry = entry => {
-  const { titulo, resumen, imagen, published_at, id } = entry.entry
+  const { titulo, resumen, imagen, published_at, id, url } = entry.entry
   return (
     <article className={styles.article}>
         <Image layout='responsive' width={640} height={400} src={`http://localhost:1337${imagen.url}`} alt={`pokemon nft ${titulo}`}/>
@@ -11,7 +11,7 @@ const Entry = entry => {
             <h3 className={styles.heading}>{titulo}</h3>
             <p className={styles.date}>{formatDate(published_at)}</p>
             <p className={styles.resume}>{resumen}</p>
-            <Link href={`/blog/${id}`}>
+            <Link href={`/blog/${url}`}>
               <a className={styles.archor}>
                 Leer Post
               </a>

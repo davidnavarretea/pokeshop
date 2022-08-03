@@ -9,7 +9,9 @@ const BlogEntry = (entry) => {
     const router = useRouter()
     console.log(imagen.url)
   return (
-    <Layout>
+    <Layout
+        page={titulo}
+    >
         <main className='contenedor'>
             <h1 className='heading'>{titulo}</h1>
             <article className={styles.article}>
@@ -28,20 +30,20 @@ export async function getStaticPaths() {
     const request = await fetch(url)
     const entries = await request.json()
     const paths = entries.map(entry => ({
-        params: { id: entry.id }
+        params: { url: entry.url }
     }))
     return {
         paths,
         fallback: false
     }
 }
-export async function getStaticProps({params: { id }}) {
-    const url = `${process.env.API_URL}/blogs/${id}`
-    const request = await fetch(url)
+export async function getStaticProps({params: { url  }}) {
+    const url2 = `${process.env.API_URL}/blogs?url=${url}`
+    const request = await fetch(url2)
     const entry = await request.json()
     return {
         props: {
-            entry
+            entry: entry[0]
         }
     }
 }
