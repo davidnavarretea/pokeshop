@@ -7,7 +7,6 @@ const BlogEntry = (entry) => {
     const entr = entry.entry
     const {contenido, imagen, published_at, titulo} = entr
     const router = useRouter()
-    console.log(imagen.url)
   return (
     <Layout
         page={titulo}
@@ -15,7 +14,7 @@ const BlogEntry = (entry) => {
         <main className='contenedor'>
             <h1 className='heading'>{titulo}</h1>
             <article className={styles.article}>
-                <Image layout='responsive' width={640} height={400} src={`http://localhost:1337${imagen.url}`} alt={ `Imagen entrada ${titulo}` }/>
+                <Image priority layout='responsive' width={640} height={400} src={`http://localhost:1337${imagen.url}`} alt={ `Imagen entrada ${titulo}` }/>
                 <div className={styles.content}>
                     <p className={styles.date}>{formatDate(published_at)}</p>
                     <p className={styles.text}>{contenido}</p>
