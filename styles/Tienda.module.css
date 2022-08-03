@@ -1,0 +1,11 @@
+.contenedor2 {
+    width: 380px;
+    height: 529px;
+}
+.img{
+    transform: scale(0.75);
+}
+.img:hover{
+    transform: scale(1);
+    transition: 1s;
+}
